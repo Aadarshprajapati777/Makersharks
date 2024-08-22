@@ -2,6 +2,8 @@ com/Makersharks/Makersharks/Assessment/entites/SupplierEntity.class
 com/Makersharks/Makersharks/Assessment/services/SupplierService.class
 com/Makersharks/Makersharks/Assessment/dto/SupplierDTO.class
 com/Makersharks/Makersharks/Assessment/controllers/SupplierController.class
+com/Makersharks/Makersharks/Assessment/controllers/GlobalExceptionHandler.class
 com/Makersharks/Makersharks/Assessment/MakersharksAssessmentApplication.class
 com/Makersharks/Makersharks/Assessment/configuration/AppConfig.class
 com/Makersharks/Makersharks/Assessment/repositories/SupplierRepository.class
+com/Makersharks/Makersharks/Assessment/dto/MyRequest.class

@@ -1,8 +1,10 @@
 package com.Makersharks.Makersharks.Assessment.services;
 
-import java.util.function.Supplier;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -33,8 +35,17 @@ public class SupplierService {
     }
 
 
-    public Page<SupplierDTO> getAllSuppliers(int pageNo, int pageSize) {
+    public Page<SupplierDTO> getAllSuppliers(int pageNo, int pageSize, String location, String nature_of_business, String manufacturing_processes) {
         Pageable pageable = PageRequest.of(pageNo, pageSize);
-        return supplierRepository.findAll(pageable).map(supplierEntity -> modelMapper.map(supplierEntity, SupplierDTO.class));
+        Page<SupplierEntity> supplierPage = supplierRepository.findByLocationAndNatureOfBusinessAndManufacturingProcesses(location, nature_of_business, manufacturing_processes, pageable);
+        List<SupplierDTO> supplierDTOList = supplierPage.getContent().stream()
+            .map(supplierEntity -> modelMapper.map(supplierEntity, SupplierDTO.class))
+            .collect(Collectors.toList());
+    
+        return new PageImpl<>(supplierDTOList, pageable, supplierPage.getTotalElements());
     }
+    
+
+    
+    
 }
