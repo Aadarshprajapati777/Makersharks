@@ -24,11 +24,13 @@ public class SupplierController {
     }
 
     @GetMapping(path = "/{id}")
+    // @RateLimited
     public SupplierDTO getSupplierById(@PathVariable("id") Long supplierId) {
         return supplierService.getSupplierById(supplierId);
     }
 
     @PostMapping("/search")
+    @RateLimited
     public Page<SupplierDTO> getAllSuppliers(@Valid @RequestBody MyRequest request,
                                               @RequestParam(defaultValue = "0") int pageNo,
                                               @RequestParam(defaultValue = "3") int pageSize) {
@@ -36,6 +38,7 @@ public class SupplierController {
     }
 
     @PostMapping("/create")
+    // @RateLimited
     public SupplierDTO createNewSupplier(@Valid @RequestBody SupplierDTO supplierDTO) {
         return supplierService.createNewSupplier(supplierDTO);
     }
