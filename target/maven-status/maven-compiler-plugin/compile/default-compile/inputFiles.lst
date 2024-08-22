@@ -1,3 +1,7 @@
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/MakersharksAssessmentApplication.java
+/home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/configuration/AppConfig.java
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/controllers/SupplierController.java
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/dto/SupplierDTO.java
+/home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/entites/SupplierEntity.java
+/home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/repositories/SupplierRepository.java
+/home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/services/SupplierService.java

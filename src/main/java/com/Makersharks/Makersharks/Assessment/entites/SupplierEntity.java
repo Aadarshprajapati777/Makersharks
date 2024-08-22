@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class SupplierEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String supplier_id;
+    private Long supplier_id;
     private String company_name;
     private String website;
     private String location;
