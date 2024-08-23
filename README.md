@@ -12,6 +12,9 @@ Makersharks is building a search page where buyers can find manufacturers based 
     3. Get Supplier Details
     GET /api/v1/supplier/{id}
 
+    4. Swagger Path
+        http://localhost:8080/swagger-ui/
+
   ## Requirements
     1. Search Functionality: Retrieve a list of manufacturers based on location, nature of business, and manufacturing processes. Supports pagination.
     2. Input Validation: Ensure all inputs are validated and sanitized.
