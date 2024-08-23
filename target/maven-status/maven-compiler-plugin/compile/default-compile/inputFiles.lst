@@ -1,5 +1,6 @@
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/MakersharksAssessmentApplication.java
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/configuration/AppConfig.java
+/home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/configuration/SwaggerConfig.java
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/controllers/GlobalExceptionHandler.java
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/controllers/RateLimitExceededException.java
 /home/arsh/Documents/MakerShark/src/main/java/com/Makersharks/Makersharks/Assessment/controllers/RateLimited.java

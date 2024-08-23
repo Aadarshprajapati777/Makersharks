@@ -29,7 +29,7 @@ public class RateLimitingAspect {
         
         return "Aadarsh123"; //hardcoded for now
         //TODO: Implement method to generate the client ID
-        // Set the client to the client cookies.
+        // Set the clientID to the client cookies.
         // get the clientID from the cookies.
         // validate the client.
         // Allow the client to make number of requests set in the rate limiter.
