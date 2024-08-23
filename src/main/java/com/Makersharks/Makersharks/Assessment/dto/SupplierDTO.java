@@ -3,6 +3,8 @@ package com.Makersharks.Makersharks.Assessment.dto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.*;
 
 @Data
@@ -11,6 +13,7 @@ import lombok.*;
 public class SupplierDTO {
 
     @NotNull(message = "Supplier ID cannot be null")
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long supplier_id;
 
     @NotBlank(message = "Company name cannot be blank")

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.Makersharks.Makersharks.Assessment.MakersharksAssessmentApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.41 s -- in com.Makersharks.Makersharks.Assessment.MakersharksAssessmentApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.25 s -- in com.Makersharks.Makersharks.Assessment.MakersharksAssessmentApplicationTests

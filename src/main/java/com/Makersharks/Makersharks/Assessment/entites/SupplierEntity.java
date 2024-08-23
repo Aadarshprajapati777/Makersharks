@@ -1,4 +1,6 @@
 package com.Makersharks.Makersharks.Assessment.entites;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +20,7 @@ import lombok.NoArgsConstructor;
 public class SupplierEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long supplier_id;
     private String company_name;
     private String website;
